@@ -1,0 +1,25 @@
+Source: obozrenie
+Section: games
+Priority: optional
+Build-Depends: cdbs (>= 0.4.43),
+ dh-python,
+ debhelper (>= 6),
+ python3,
+ python3-babel
+Maintainer: Artem Vorotnikov <artem@vorotnikov.me>
+Standards-Version: 3.9.5
+Vcs-Git: https://github.com/obozrenie/obozrenie
+Homepage: https://github.com/obozrenie
+
+Package: obozrenie
+Architecture: all
+Depends: ${misc:Depends},
+ ${python3:Depends},
+ python3-babel, python3-pytoml, python3-xmltodict, python3-xdg, qstat, gir1.2-gtk-3.0, gvfs-backends, glib-networking, xdg-user-dirs
+X-Python-Version: >= 3.4
+Description: Simple and easy to use game browser
+ Obozrenie is a game server browser that can be used to access information about and connect to multiplayer servers.
+ It features:
+ * Fast, fully threaded stat engine
+ * Easy to use, elegant, uncluttered GUI
+ * Supports various backends, designed for modularity.
